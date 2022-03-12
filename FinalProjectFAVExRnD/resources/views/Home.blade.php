@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <title>Home Page</title>
 </head>
 <body>
     <nav id="navbar">
         <div class="logo">
-            <h2>Febrico Jonata</h2>
+            <h2>Website</h2>
         </div>
         <ul class="nav-item">
             <li><a href="/">Home</a></li>
