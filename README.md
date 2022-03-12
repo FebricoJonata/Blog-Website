@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # Final-Project-FAVExRnD Kelompok 7
 
 - Febrico Jonata
@@ -47,14 +48,3 @@
 
    *Jika masih bermasalah bisa menghubungi Farhan/teman sekelompok*
    ```
-=======
-# Final-Project-FAVExRnD
-
-# Berhasil
-
-# Clone
-
-Test
-
-Seru Juga yee
->>>>>>> 91c69f84b3efe1eac4cbaa9555797393093f4168
