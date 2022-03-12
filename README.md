@@ -48,6 +48,4 @@
    git push
    ```
 
-   _Jika masih bermasalah bisa menghubungi Farhan/teman sekelompok_
-
-   tes tes ini Yuric yang edit
+   _Jika masih bermasalah bisa menghubungi Farhan/teman sekelompok_        
