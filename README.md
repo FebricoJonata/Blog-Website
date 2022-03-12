@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Final-Project-FAVExRnD Kelompok 7
 
 - Febrico Jonata
@@ -30,7 +28,7 @@
 
    _Note tolong jangan mengubah/menambahkan branch tanpa pemberitahuan_
 
-   _Jika memiliki error saat remote git bisa menghubungi Farhan/teman kelompok atau_[mengakses link berikut](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+   _Jika memiliki error saat remote git bisa menghubungi Farhan/teman kelompok atau_ [mengakses link berikut](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
 
 2. Jika ingin Commit sertai dengan comment apa yang dikomit dan usahankan jelas. EX : "Menambahkan Navbar"
 
