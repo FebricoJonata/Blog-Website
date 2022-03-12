@@ -14,10 +14,10 @@
         </div>
         <ul class="nav-item">
             <li><a href="/">Home</a></li>
-            <li><a href="/create/book">Create Book</a></li>
-            <li><a href="/read/book">Read Book</a></li>
+            <li><a href="/">Create Book</a></li>
+            <li><a href="/">Read Book</a></li>
         </ul>
-            <a class="cta" href="/create/book"><button>Login</button></a>
+            <a class="cta" href="/"><button>Login</button></a>
     </nav>
 
 </body>
