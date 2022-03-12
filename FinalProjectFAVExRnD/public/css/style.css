@@ -1,0 +1,82 @@
+:root{
+    --green: #A8DADC;
+    --greenpastel: #F1FAEE;
+    --bluedark: #1D3557;
+    --black: #121212;
+    --blacklogo: #333333;
+    --white: #F1FAEE;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-center a{
+    color: var(--bluedark);
+    font-family: 'Merriweather';
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo{
+    width: 85px;
+    height: 60px;
+}
+.search{
+    width: 46px;
+    height: 46px;
+    margin-top: -15px;
+    margin-right: -50px;
+}
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 90px;
+}
+.navbar-left h1{
+    font-size: 40px;
+    font-family: 'Merriwather';
+    color: var(--blacklogo);
+}
+nav {
+    background-color: var(--green);
+    width: 100%;
+    padding: 30px 30px;
+    position: fixed;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+.navbar-center{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.navbar-login{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.navbar-login a{
+    color: var(--white);
+    font-family: 'Secular One';
+    text-decoration: none;
+    font-size: 27px;
+    border-radius: 40px;
+    margin-top: -20px;
+}
+.navbar-login .login{
+    color: var(--bluedark);
+    background-color: var(--white);
+    padding: 10px 30px;
+}
+.navbar-login .signup{
+    color: var(--white);
+    background-color: var(--bluedark);
+    padding: 10px 20px;
+}
