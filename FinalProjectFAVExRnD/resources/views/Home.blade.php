@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="navbar">
+    <!-- <nav id="navbar">
         <div class="logo">
             <h2>Website</h2>
         </div>
@@ -21,7 +21,7 @@
             <li><a href="/">Read Book</a></li>
         </ul>
             <a class="cta" href="/"><button>Login</button></a>
-    </nav>
+    </nav> -->
 
     <!-- Nicholas - nav bar , udah ada styling juga -->
     <nav id="Navbar">
