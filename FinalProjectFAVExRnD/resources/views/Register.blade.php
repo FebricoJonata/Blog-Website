@@ -15,7 +15,7 @@
     <nav id="Navbar">
         <div class="navbar-container">
             <div class="navbar-left">
-                <img class="logo" src="./Asset/images-removebg-preview.png" alt="logo">
+                <img class="logo" src="././public/Asset/images-removebg-preview.png" alt="logo">
                 <h1>LOGO</h1>
             </div>
             <div class="navbar-center">
@@ -25,7 +25,7 @@
                 <a href="#ContactUs">CONTACT US</a>
             </div>
             <div class="navbar-right">
-                <img class="search" src="./Asset/magnifying-glass.png" alt="seacrh">
+                <img class="search" src="././public/Asset/magnifying-glass.png" alt="seacrh">
             </div>
             <div class="navbar-login">
                 <a class="login" href="">Log In</a>
@@ -38,7 +38,7 @@
     <section id="Register">
         <div class="register-container">
             <div class="register-left">
-                <img src="./Asset/ae5ae16a1f8bdad663c96a699d91e646-removebg-preview.png" alt="gambar-utama">
+                <img src="././public/Asset/ae5ae16a1f8bdad663c96a699d91e646-removebg-preview.png" alt="gambar-utama">
                 <p class="p2">Together we study</p>
                 <p>Together we build the better world</p>
             </div>
@@ -111,9 +111,8 @@
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
-    "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
