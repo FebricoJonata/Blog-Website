@@ -44,6 +44,7 @@
                 <a class="signup" href="">Sign Up</a>
             </div>
         </div>
+        <hr>
     </nav>
 
 </body>
