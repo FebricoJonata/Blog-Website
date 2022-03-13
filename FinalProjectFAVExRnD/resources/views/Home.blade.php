@@ -27,7 +27,7 @@
     <nav id="Navbar">
         <div class="navbar-container">
             <div class="navbar-left">
-                <img class="logo" src="./Asset/images-removebg-preview.png" alt="logo">
+                <img class="logo" src="././public/Asset/images-removebg-preview.png" alt="logo">
                 <h1>LOGO</h1>
             </div>
             <div class="navbar-center">
@@ -37,7 +37,7 @@
                 <a href="#ContactUs">CONTACT US</a>
             </div>
             <div class="navbar-right">
-                <img class="search" src="./Asset/magnifying-glass.png" alt="seacrh">
+                <img class="search" src="././public/Asset/magnifying-glass.png" alt="seacrh">
             </div>
             <div class="navbar-login">
                 <a class="login" href="">Log In</a>
