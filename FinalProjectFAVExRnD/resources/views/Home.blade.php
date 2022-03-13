@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="././public/css/home.css">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
@@ -40,8 +40,8 @@
                 <img class="search" src="./Asset/magnifying-glass.png" alt="seacrh">
             </div>
             <div class="navbar-login">
-                <a class="login" href="">Log In</a>
-                <a class="signup" href="">Sign Up</a>
+                <a class="login" href="/login">Log In</a>
+                <a class="signup" href="/register">Sign Up</a>
             </div>
         </div>
         <hr>

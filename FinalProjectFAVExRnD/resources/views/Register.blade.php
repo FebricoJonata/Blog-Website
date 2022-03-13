@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="././public/css/register.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
@@ -47,7 +47,8 @@
                     <h1>Let's join our Blog!</h1>
                 </div>
                 <div class="register-form">
-                    <form id="form" onsubmit="validate()">
+                    <form id="form" onsubmit="validate()" action="/register" method="POST">
+                        @csrf
                         <div class="form-bg">
                             <div class="register-input">
                                 <label for="namaLengkap">Nama Lengkap</label>
