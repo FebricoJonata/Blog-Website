@@ -11,17 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <nav id="navbar">
-        <div class="logo">
-            <h2>Website</h2>
-        </div>
-        <ul class="nav-item">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Create Book</a></li>
-            <li><a href="/">Read Book</a></li>
-        </ul>
-            <a class="cta" href="/"><button>Login</button></a>
-    </nav> -->
 
     <!-- Nicholas - nav bar , udah ada styling juga -->
     <nav id="Navbar">

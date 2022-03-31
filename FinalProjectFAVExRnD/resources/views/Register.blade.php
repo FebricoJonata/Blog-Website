@@ -28,7 +28,7 @@
                 <img class="search" src="/Assets/magnifying-glass.png" alt="seacrh">
             </div>
             <div class="navbar-login">
-                <a class="login" href="">Log In</a>
+                <a class="login" href="/login">Log In</a>
             </div>
         </div>
         <hr>
@@ -52,27 +52,66 @@
                         <div class="form-bg">
                             <div class="register-input">
                                 <label for="namaLengkap">Nama Lengkap</label>
-                                <input type="text" id="name" name="email" placeholder="Masukkan Nama Anda" required>
+                                <input type="text" id="name" name="name" placeholder="Masukkan Nama Anda" required value="{{ old('name') }}">
+                                @error('name')
+                                <div class="invalid-feedback">
+                                  {{ $message }}
+                                </div>
+                                @enderror
                             </div>
                             <div class="register-input">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required>
+                                <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required value="{{ old('password') }}">
+                                @error('email')
+                                <div class="invalid-feedback">
+                                  {{ $message }}
+                                </div>
+                                @enderror
                             </div>
                             <div class="register-input">
                                 <label for="password">Password</label>
-                                <input type="password" id="password" placeholder="Masukkan Password Anda" required></input>
+                                <input type="password" id="password" name="password" placeholder="Masukkan Password Anda" required value="{{ old('password') }}">
+                                @error('password')
+                                <div class="invalid-feedback">
+                                  {{ $message }}
+                                </div>
+                                @enderror
                             </div>
                             <div class="register-input">
                                 <label for="konfirmasiPassword">Konfirmasi Password</label>
-                                <input type="password" id="password" placeholder="Masukkan kembali Password Anda" required></input>
-                            </div>                            
+                                <input type="password" id="password" name="confirmPassword" placeholder="Masukkan kembali Password Anda" required value="{{ old('confirmPassword') }}">
+                                @error('confirmPassword')
+                                <div class="invalid-feedback">
+                                  {{ $message }}
+                                </div>
+                                @enderror
+                            </div> 
+                            <div class="register-input">
+                                <label for="username">Username</label>
+                                <input type="text" id="name" name="username" placeholder="Masukkan Username Anda" required value="{{ old('username') }}">
+                                @error('username')
+                                <div class="invalid-feedback">
+                                  {{ $message }}
+                                </div>
+                                @enderror
+                            </div>                           
                             <div class="register-input">
                                 <label for="dob">Tempat dan Tanggal Lahir</label>
-                                <input type="datetime" id="dob" cols="50" rows="10" placeholder="Tempat, DD-MM-YYYY" required></input>
+                                <input type="date" id="dob" cols="50" rows="10" name="dob" placeholder="Tempat, DD-MM-YYYY" required value="{{ old('dob') }}">
+                                @error('dob')
+                                <div class="invalid-feedback">
+                                  {{ $message }}
+                                </div>
+                                @enderror
                             </div>                            
                             <div class="register-input">
                                 <label for="telepon">Normor Telepon</label>
-                                <input type="tel" id="telepon" placeholder="+62 XXXXXXXXXXX" pattern="+62 [0-9]{11}" required></input>
+                                <input type="tel" id="telepon" placeholder="+62 XXXXXXXXXXX" name="telepon" pattern="+62 [0-9]{11}" required value="{{ old('telepon') }}">
+                                @error('telepon')
+                                <div class="invalid-feedback">
+                                  {{ $message }}
+                                </div>
+                                @enderror
                             </div>                            
                             <!-- <div class="register-input">
                                 <label for="jenisKelamin">Jenis Kelamin</label>
