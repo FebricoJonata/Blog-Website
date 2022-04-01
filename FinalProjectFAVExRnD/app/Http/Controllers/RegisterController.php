@@ -12,15 +12,16 @@ class RegisterController extends Controller
 
     Public function store(Request $request){
         $validateData = $request->validate([
-            'name'=>'max:255|unique:user',
+            'name'=>'max:255|unique:users',
             'email'=>'email:dns|unique:users',
             // 'password'=>'confirmed|min:8->mixedCase()->numbers()->symbols()',
             'password' => 'min:8',
             'confirmPassword'=>'required|min:8',
-            'username'=>'required|min:4|max:255|unique:user',
+            'username'=>'required|min:4|max:255|unique:users',
             'dob' => 'required',
             'telepon'=> 'required',
         ]);
+
         // dd('Berhasil');
         User::create($validateData);
 
