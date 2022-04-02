@@ -52,7 +52,7 @@
                         <div class="form-bg">
                             <div class="register-input">
                                 <label for="namaLengkap">Nama Lengkap</label>
-                                <input type="text" id="name" name="name" placeholder="Masukkan Nama Anda" required value="{{ old('name') }}">
+                                <input type="text" id="name" name="name" placeholder="Masukkan Nama Anda" required value="{{ old('name') }}" class="@error('name') is-invalid @enderror">
                                 @error('name')
                                 <div class="invalid-feedback">
                                   {{ $message }}
@@ -61,7 +61,7 @@
                             </div>
                             <div class="register-input">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required value="{{ old('password') }}">
+                                <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required value="{{ old('email') }}" class="@error('email') is-invalid @enderror">
                                 @error('email')
                                 <div class="invalid-feedback">
                                   {{ $message }}
@@ -79,7 +79,7 @@
                             </div>
                             <div class="register-input">
                                 <label for="konfirmasiPassword">Konfirmasi Password</label>
-                                <input type="password" id="password" name="confirmPassword" placeholder="Masukkan kembali Password Anda" required value="{{ old('confirmPassword') }}">
+                                <input type="password" id="password" name="password_confirmation" placeholder="Masukkan kembali Password Anda" required value="{{ old('confirmPassword') }}">
                                 @error('confirmPassword')
                                 <div class="invalid-feedback">
                                   {{ $message }}
