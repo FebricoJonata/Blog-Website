@@ -52,7 +52,7 @@
                         <div class="form-bg">
                             <div class="register-input">
                                 <label for="namaLengkap">Nama Lengkap</label>
-                                <input type="text" id="name" name="name" placeholder="Masukkan Nama Anda" required value="{{ old('name') }}" class="@error('name') is-invalid @enderror">
+                                <input type="text" id="name" name="name" placeholder="Masukkan Nama Anda" required value="{{ old('name') }}">
                                 @error('name')
                                 <div class="invalid-feedback">
                                   {{ $message }}
@@ -61,7 +61,7 @@
                             </div>
                             <div class="register-input">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required value="{{ old('email') }}" class="@error('email') is-invalid @enderror">
+                                <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required value="{{ old('email') }}">
                                 @error('email')
                                 <div class="invalid-feedback">
                                   {{ $message }}
