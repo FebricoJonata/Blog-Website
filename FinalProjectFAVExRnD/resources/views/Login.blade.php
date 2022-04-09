@@ -68,7 +68,7 @@
                 <img class="search" src="/Assets/magnifying-glass.png" alt="seacrh">
             </div>
             <div class="navbar-login">
-                <a class="login" href="/login">Log In</a>
+                <a class="login" href="/register">Sign Up</a>
             </div>
         </div>
         <hr>
