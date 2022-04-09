@@ -177,15 +177,27 @@
                     <h1>Welcome Back!</h1>
                 </div>
                 <div class="register-form">
-                    <form id="form" onsubmit="validate()" method="POST">
+                <form id="form" onsubmit="validate()" action="/register" method="POST">
+                        @csrf
+
                         <div class="form-bg">
                             <div class="register-input">
                                 <label for="username">Username</label>
                                 <input type="text" id="username" name="username" placeholder="Masukkan Username Anda" required>
+                                @error('username')
+                                <div class="invalid-feedback">
+                                  {{ $message }}
+                                </div>
+                                @enderror
                             </div>
                             <div class="register-input">
                                 <label for="password">Password</label>
                                 <input type="password" id="password" placeholder="Masukkan Password Anda" required></input>
+                                @error('password')
+                                <div class="invalid-feedback">
+                                  {{ $message }}
+                                </div>
+                                @enderror
                             </div>
                             <div class="ForgotBox">
                                 <a href="#">Forgot Password</a>
