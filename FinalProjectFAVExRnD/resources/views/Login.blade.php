@@ -38,7 +38,7 @@
 </body>
 </html> --}}
 
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -122,7 +122,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
-</html>
+</html> --}}
 
 
 
@@ -135,7 +135,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
-    <link rel="stylesheet" href="/css/loginstyle2.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
@@ -145,7 +145,7 @@
     <nav id="Navbar">
         <div class="navbar-container">
             <div class="navbar-left">
-                <img class="logo" src="/Asset/images-removebg-preview.png" alt="logo">
+                <img class="logo" src="/Assets/images-removebg-preview.png" alt="logo">
                 <h1>LOGO</h1>
             </div>
             <div class="navbar-center">
@@ -155,7 +155,7 @@
                 <a href="#ContactUs">CONTACT US</a>
             </div>
             <div class="navbar-right">
-                <img class="search" src="/Asset/magnifying-glass.png" alt="seacrh">
+                <img class="search" src="/Assets/magnifying-glass.png" alt="seacrh">
             </div>
             <div class="navbar-login">
                 <a class="signup" href="">Sign Up</a>
@@ -168,7 +168,7 @@
     <section id="Register">
         <div class="register-container">
             <div class="register-left">
-                <img src="/Asset/ae5ae16a1f8bdad663c96a699d91e646-removebg-preview.png" alt="gambar-utama">
+                <img src="/Assets/ae5ae16a1f8bdad663c96a699d91e646-removebg-preview.png" alt="gambar-utama">
                 <p class="p2">Together we study</p>
                 <p>Together we build the better world</p>
             </div>
@@ -177,7 +177,7 @@
                     <h1>Welcome Back!</h1>
                 </div>
                 <div class="register-form">
-                    <form id="form" onsubmit="validate()">
+                    <form id="form" onsubmit="validate()" method="POST">
                         <div class="form-bg">
                             <div class="register-input">
                                 <label for="username">Username</label>
