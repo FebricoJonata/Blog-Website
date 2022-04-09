@@ -11,6 +11,9 @@ $("#form").validate({
             minlength: 8,
             password: true
         },
+        username:{
+            minlength: 2
+        },
     },
     message:{
         name:{
@@ -21,6 +24,9 @@ $("#form").validate({
         },
         password:{
             minlength: "Harus lebih dari 8 huruf"
+        },
+        username:{
+            minlength: "Harus lebih dari 2 huruf"
         },
     },
 

@@ -1,0 +1,218 @@
+:root{
+    --green: #A8DADC;
+    --greenpastel: #F1FAEE;
+    --bluedark: #1D3557;
+    --black: #121212;
+    --blacklogo: #333333;
+    --white: #F1FAEE;
+    --blacktrue: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar-center a{
+    color: var(--bluedark);
+    font-family: 'Merriweather';
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo{
+    width: 85px;
+    height: 60px;
+}
+.search{
+    width: 46px;
+    height: 46px;
+    margin-top: -15px;
+    margin-right: -20px;
+}
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 90px;
+}
+.navbar-left h1{
+    font-size: 40px;
+    font-family: 'Merriwather';
+    color: var(--blacklogo);
+}
+nav {
+    /* background-color: var(--green); */
+    width: 100%;
+    /* padding: 30px 30px; */
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: -30px;
+    position: fixed;
+    background-color: var(--white);
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+.navbar-center{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.navbar-login{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.navbar-login a{
+    color: var(--white);
+    font-family: 'Secular One';
+    text-decoration: none;
+    font-size: 27px;
+    border-radius: 25px;
+    margin-top: -20px;
+}
+.navbar-login .signup{
+    color: var(--white);
+    width: 144px;
+    height: 54px;
+    background-color: var(--bluedark);
+    padding: 6px 23px;
+}
+nav hr{
+    width: 1444px;
+    background-color: var(--green);
+    border-top: none;
+    height: 26px;
+    margin-top: 25px;
+    margin-left: -30px;
+}
+
+/* register page */
+#Register{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, #FFFFFF, var(--green));
+    background-size: contain;
+    align-content: center;
+    width: 100%;
+    height: 120vh;
+}
+.register-container{
+    margin-top:150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.register-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -100px;
+    margin-top: -70px;
+}
+.register-left img{
+    width: 777px;
+    height: 435px;
+    /* margin-left: -150px; */
+}
+.register-left p{
+    font-family: 'Merriiweather';
+    text-align: center;
+    font-size: 27px;
+}
+.register-left .p2{
+    margin-top: 30px;
+}
+.register-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+}
+.register-heading{
+    font-family: 'Secular One';
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+}
+.register-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.register-input label ,.style{
+    color: var(--blacktrue);
+    font-size: 20px;
+    font-family: 'Merriweather';
+}
+.register-input input {
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 12px 24px;
+    outline: none;
+    border: none;
+    font-family: 'Secular One';
+}
+.form-bg {
+    /* background-color: rgba(228, 228, 228, 0.5); */
+    background-color: var(--white);
+    padding: 48px 64px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.ForgotBox{
+    font-size: 20px;
+    margin: .2rem 0 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.ForgotBox a{
+    text-decoration: none;
+    color: rgba(29, 53, 87, 0.72);
+    font-family: 'Secular One';
+}
+.logIn-btn {
+    background-color: var(--white);
+    color: var(--bluedark);
+    outline: none;
+    border-color: var(--bluedark);
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 144px;
+    height: 54px;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 150px;
+}
+
+.RememberBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 150px;
+    align-items: center;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Secular One';
+    color: rgba(29, 53, 87, 0.72);
+}
+.RememberBox input{
+    margin-right: 10px;
+    height: 18px;
+    width: 18px;
+}
