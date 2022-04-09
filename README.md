@@ -29,23 +29,23 @@
    _Note tolong jangan mengubah/menambahkan branch tanpa pemberitahuan_
    _Jika memiliki error saat remote git bisa menghubungi Farhan/teman kelompok atau_ [mengakses link berikut](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
 
-2. Jika ingin Commit sertai dengan comment apa yang dikomit dan usahankan jelas. EX : "Menambahkan Navbar"
+... 2. Jika ingin Commit sertai dengan comment apa yang dikomit dan usahankan jelas. EX : "Menambahkan Navbar"
 
-   **Silahkan lakukan perintah berikut**
+**Silahkan lakukan perintah berikut**
 
-   ```
-   git add .
-   git commit -m "Comment"
-   git push
-   ```
+```
+git add .
+git commit -m "Comment"
+git push
+```
 
-   _Jika tidak bisa push ke repo silahkan gunakan_
+_Jika tidak bisa push ke repo silahkan gunakan_
 
-   ```
-   git pull
-   git add .
-   git commit -m "Comment"
-   git push
-   ```
+```
+git pull
+git add .
+git commit -m "Comment"
+git push
+```
 
-   _Jika masih bermasalah bisa menghubungi Farhan/teman sekelompok_        
+_Jika masih bermasalah bisa menghubungi Farhan/teman sekelompok_

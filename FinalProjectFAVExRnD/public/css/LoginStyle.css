@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.LoginContainer{
+.LoginContainer {
     height: 100vh;
     /* background-color: rebeccapurple; */
     display: flex;
@@ -11,58 +11,60 @@
     align-items: center;
 }
 
-.imageBox{
+.imageBox {
     background-color: red;
     outline: 1px solid;
     height: 10rem;
     width: 10rem;
 }
 
-.loginBox{
+.loginBox {
     display: flex;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
 
-.titleForm{
+.titleForm {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
 }
 
-label, input{
+label,
+input {
     font-size: 23px;
     display: flex;
     flex-direction: column;
-    
 }
 
-input[type="text"], input[type="password"]{
+input[type="text"],
+input[type="password"] {
     width: 29rem;
 }
 
-.ForgotBox{
+.ForgotBox {
     font-size: 20px;
-    margin: .2rem 0 1rem;
+    margin: 0.2rem 0 1rem;
     display: flex;
     flex-direction: row-reverse;
 }
 
-.submitButton{
+.submitButton {
     font-size: 27px;
     border-radius: 5rem;
     width: 8rem;
     height: 3rem;
-    margin: .7rem 0 .4rem;
+    margin: 0.7rem 0 0.4rem;
 }
 
-.RememberBox{
+.RememberBox {
     display: flex;
     flex-direction: row;
 }
 
-input[type="checkbox"], label{
+input[type="checkbox"],
+label {
     font-size: 22px;
     line-height: 1.6em;
     height: 1.6em;
