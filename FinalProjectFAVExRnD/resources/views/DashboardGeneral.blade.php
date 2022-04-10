@@ -47,5 +47,6 @@
                     <p class="p2">Let’s try it!</p>
                 </div>
             </div>
+    </section>
 </body>
 </html>
