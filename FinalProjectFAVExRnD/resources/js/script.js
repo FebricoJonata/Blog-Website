@@ -14,6 +14,12 @@ $("#form").validate({
         username:{
             minlength: 2
         },
+        fullname:{
+            minlength: 2
+        },
+        message:{
+            minlength: 10
+        },
     },
     message:{
         name:{
@@ -27,6 +33,12 @@ $("#form").validate({
         },
         username:{
             minlength: "Harus lebih dari 2 huruf"
+        },
+        fullname:{
+            minlength: "Harus lebih dari 2 huruf"
+        },
+        message:{
+            minlength: "Harus lebih dari 10 huruf"
         },
     },
 

@@ -1,0 +1,626 @@
+:root{
+    --green: #A8DADC;
+    --greenpastel: #F1FAEE;
+    --bluedark: #1D3557;
+    --black: #121212;
+    --blacklogo: #333333;
+    --white: #F1FAEE;
+    --blacktrue: #000000;
+    --whitewhite: #FEFEFE;
+    --navy: #608394;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar-center a{
+    color: var(--bluedark);
+    font-family: 'Merriweather';
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo{
+    width: 85px;
+    height: 60px;
+}
+.search{
+    width: 46px;
+    height: 46px;
+    margin-top: -15px;
+    margin-right: 20px;
+}
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 90px;
+}
+.navbar-left h1{
+    font-size: 40px;
+    font-family: 'Merriwather';
+    color: var(--blacklogo);
+}
+nav {
+    /* background-color: var(--green); */
+    width: 100%;
+    /* padding: 30px 30px; */
+    margin-top: -150px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: -30px;
+    position: fixed;
+    background-color: var(--white);
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+.navbar-center{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.navbar-profile{
+    display: flex;
+    flex-direction: column;
+    margin-right: -160px;
+    margin-top: 5px;
+    gap: 20px;
+}
+.navbar-profile .welcome{
+    color: var(--black);
+    font-family: 'Secular One';
+    text-decoration: none;
+    font-size: 23px;
+    border-radius: 25px;
+    margin-top: -20px;
+}
+.navbar-profile .name{
+    color: var(--bluedark);
+    font-family: 'Secular One';
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-top: -20px;
+}
+.navbar-right .halo{
+    margin-top: -20px;
+    margin-right: -10px;
+    height: 70px;
+    width: 70px;
+}
+nav hr{
+    width: 1444px;
+    background-color: var(--green);
+    border-top: none;
+    height: 26px;
+    margin-top: 25px;
+    margin-left: -30px;
+}
+
+/* Dashboard */
+#Dashboard{
+    margin-top: 150px;
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, #FFFFFF, var(--green));
+    /* background-size: contain; */
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.register-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.register-left{
+    /* position: absolute;
+    top: 200px;
+    left: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -100px;
+    margin-top: -70px;
+}
+.register-left img{
+    width: 777px;
+    height: 435px;
+    /* margin-left: -150px; */
+}
+.register-left p{
+    font-family: 'Merriiweather';
+    text-align: center;
+    font-size: 27px;
+}
+.register-left .p2{
+    margin-top: 30px;
+}
+.register-right{
+    /* position: absolute;
+    top: 150px;
+    right: 20px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+}
+.register-right .bg{
+    position: relative;
+    margin-top: 20px;
+    width: 583px;
+    height: 423px;
+}
+.register-heading h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    font-family: 'Secular One';
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+}
+.register-heading .p1{
+    position: absolute;
+    top: 200px;
+    left: 55px;
+    font-size: 20px;
+    font-weight: normal;
+    font-weight: 100;
+    font-family: 'Secular One';
+    width: 470px;
+    text-align: center;
+}
+.register-heading .p2{
+    position: absolute;
+    top: 285px;
+    left: 240px;
+    font-size: 20px;
+    font-weight: normal;
+    font-weight: 100;
+    font-family: 'Secular One';
+    text-align: center;
+}
+
+/* About Us */
+#AboutUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    /* padding: 64px 160px; */
+    height: 120vh;
+    background-color: var(--green);
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+.about-top{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    /* margin-bottom: 200px; */
+}
+.about-top .judul{
+    font-size: 42px;
+    font-family: 'Merriweather';
+    font-weight: 600;
+}
+.about-top .letsknow{
+    margin-top: 20px;
+    font-size: 27px;
+    font-family: 'Merriweather';
+    font-weight: 600;
+}
+.about-top hr{
+    width: 650px;
+    background-color: var(--blacktrue);
+    border-top: none;
+    height: 3px;
+    margin-top: 25px;
+    
+}
+.about-bottom{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+.about-left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 40px;
+}
+.about-left img{
+    width: 500px;
+    height: 510px;
+    position: relative;
+}
+.about-left .judul{
+    position: absolute;
+    font-size: 42px;
+    font-family: 'Secular One';
+    font-weight: 300;
+    top: 70px;
+    left: 190px;
+}
+.about-left .ket{
+    position: absolute;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Secular One';
+    font-weight: 100;
+    top: 115px;
+    left: 90px;
+    width: 330px;
+    text-align: left;
+}
+.about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: absolute; */
+    margin-top: 40px;
+    margin-left: 150px;
+}
+.about-right img{
+    width: 650px;
+    height: 400px;
+}
+
+/* Konten Artikel */
+#Articles{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* text-align: center; */
+    height: auto;
+    background-color: var(--white);
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.articles-top{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 30px; */
+    /* align-items: flex-start; */
+}
+.articles-top p{
+    font-size: 42px;
+    font-family: 'Merriweather';
+    font-weight: 600;
+    text-align: left;
+    margin-top: 30px;
+    position: absolute;
+    top: 1550px;
+    left: 60px;
+    color: var(--whitewhite);
+}
+.articles-top img{
+    margin-top: 30px;
+    height: 100px;
+    width: 450px;
+}
+
+.articles-bottom {
+    margin-top: 60px;
+    margin-left: 29px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+}
+
+.box .judul {
+    font-weight: 100;
+    color: var(--black);
+    font-size: 25px;
+    font-family: 'Secular One';
+}
+
+.box .ket{
+    width: 400px;
+    margin-left: 30px;
+    font-weight: 100;
+    color: var(--black);
+    font-size: 18px;
+    font-family: 'Secular One';
+}
+
+.articles-read{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.articles-read a{
+    color: var(--white);
+    font-family: 'Secular One';
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.articles-read .read{
+    color: var(--bluedark);
+    background-color: var(--white);
+    width: 150px;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 7px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bluedark);
+    margin-left: -180px;
+}
+
+.articles-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    margin-left: 30px;
+}
+.pagination {
+    display: inline-block;
+    font-family: 'Secular One';
+    font-size: 20px;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.articles-nav a{
+    font-family: 'Merriweather';
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--bluedark);
+    text-align: center;
+}
+
+/* Contact Us */
+#ContactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    height: auto;
+    padding-bottom: 50px;
+}
+.contact-top{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    /* margin-bottom: 200px; */
+}
+.contact-top .judul{
+    font-size: 42px;
+    font-family: 'Merriweather';
+    font-weight: 600;
+}
+.contact-top .ket{
+    margin-top: 20px;
+    font-size: 27px;
+    font-family: 'Merriweather';
+    font-weight: 600;
+}
+.contact-top hr{
+    width: 650px;
+    background-color: var(--blacktrue);
+    border-top: none;
+    height: 3px;
+    margin-top: 25px;
+}
+.contact-content {
+    padding-top: 60px;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contact-input label ,.style{
+    color: var(--blacktrue);
+    font-size: 20px;
+    font-family: 'Merriweather';
+}
+.contact-input input, textarea {
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 12px 24px;
+    outline: none;
+    border: none;
+    font-family: 'Secular One';
+}
+.contact-input textarea {
+    max-width: 800px; min-width: 500px;
+    max-height: 300px; min-height: 100px;
+}
+.form-bg {
+    background-color: var(--white);
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact-send{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.contact-send a{
+    color: var(--white);
+    font-family: 'Secular One';
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 27px;
+    border-radius: 15px;
+    text-align: center;
+}
+.contact-send .send{
+    color: var(--white);
+    width: 144px;
+    height: 54px;
+    background-color: var(--bluedark);
+    padding: 6px 23px;
+}
+
+/* Footer */
+#Footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navy);
+    padding-top: 30px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+.footer-top .title{
+    font-family: 'Secular One';
+    color: var(--whitewhite);
+    -webkit-text-stroke: 2px var(--bluedark);
+    font-size: 65px;
+}
+.footer-top .location{
+    display: flex;
+    flex-direction: row;
+}
+.footer-top  .location img{
+    width: 45px;
+    height: 45px;
+    padding-top: 5px;
+}
+.footer-top  .location p{
+    width: 300px;
+    font-family: 'Secular One';
+    color: var(--black);
+    font-size: 20px;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: row;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    /* margin-left: 40px; */
+}
+.content{
+    padding-left: 40px;
+}
+.content .content-top{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.content .content-top .findUs{
+    font-family: 'Secular One';
+    color: var(--whitewhite);
+    -webkit-text-stroke: 2px var(--bluedark);
+    font-size: 40px;
+    text-align: center;
+}
+.content .content-bottom{
+    display: flex;
+    flex-direction: row;
+}
+.content .content-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.content .content-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.place{
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+.place .usern{
+    width: 300px;
+    font-family: 'Secular One';
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+.footer-right{
+    width: 430px;
+    height: 270px;
+    height: auto;
+    padding-right: 40px;
+}
