@@ -38,14 +38,15 @@
 
     <main>
         <div id="content">
-            <h1>Halaman Blog Posts</h1>
+            <h1>Halaman Blog Articles</h1>
 
-            @foreach ($posts as $post)
+            @foreach ($articles as $post)
             <article>
-                <h2><a href="/post/{{ $post->id }}">{{ $post->tittle }}</a></h2>
+                <h2><a href="/articles/{{ $post->id }}">{{ $post->tittle }}</a></h2>
                 <p>{{ $post->excerpt }}</p>
             </article>
             @endforeach
+            
         </div>
 
     </main>

@@ -22,7 +22,7 @@
             <div class="navbar-center">
                 <a href="/">HOME</a>
                 <a href="#About">ABOUT</a>
-                <a href="/post">ARTICLES</a>
+                <a href="/articles">ARTICLES</a>
                 <a href="#ContactUs">CONTACT US</a>
             </div>
             <div class="navbar-right">

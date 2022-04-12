@@ -40,6 +40,7 @@
         <h1>
             {{ $post->tittle }}
         </h1>
+        <p>Category : {{ $post->category->name }}</p>
             {!! $post->body !!}
             <br>
         <a href="/post">Back To Articles</a>
