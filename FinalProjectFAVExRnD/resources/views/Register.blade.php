@@ -19,9 +19,9 @@
                 <h1>LOGO</h1>
             </div>
             <div class="navbar-center">
-                <a href="#Home">HOME</a>
+                <a href="/">HOME</a>
                 <a href="#About">ABOUT</a>
-                <a href="#Articles">ARTICLES</a>
+                <a href="/post">ARTICLES</a>
                 <a href="#ContactUs">CONTACT US</a>
             </div>
             <div class="navbar-right">

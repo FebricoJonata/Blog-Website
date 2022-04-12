@@ -125,8 +125,6 @@
 </html> --}}
 
 
-
-
 <!-- Login Page dari Nicholas -->
 <!DOCTYPE html>
 <html lang="en">
@@ -149,7 +147,7 @@
                 <h1>LOGO</h1>
             </div>
             <div class="navbar-center">
-                <a href="#Home">HOME</a>
+                <a href="/">HOME</a>
                 <a href="#About">ABOUT</a>
                 <a href="#Articles">ARTICLES</a>
                 <a href="#ContactUs">CONTACT US</a>
@@ -158,7 +156,7 @@
                 <img class="search" src="/Assets/magnifying-glass.png" alt="seacrh">
             </div>
             <div class="navbar-login">
-                <a class="signup" href="">Sign Up</a>
+                <a class="signup" href="/register">Sign Up</a>
             </div>
         </div>
         <hr>
@@ -177,13 +175,13 @@
                     <h1>Welcome Back!</h1>
                 </div>
                 <div class="register-form">
-                <form id="form" onsubmit="validate()" action="/register" method="POST">
+                <form id="form" onsubmit="validate()" action="/login" method="POST">
                         @csrf
 
                         <div class="form-bg">
                             <div class="register-input">
                                 <label for="username">Username</label>
-                                <input type="text" id="username" name="username" placeholder="Masukkan Username Anda" required>
+                                <input type="text" id="username" name="username" placeholder="Masukkan Username Anda" required value="{{ old('username') }}">
                                 @error('username')
                                 <div class="invalid-feedback">
                                   {{ $message }}
@@ -192,7 +190,7 @@
                             </div>
                             <div class="register-input">
                                 <label for="password">Password</label>
-                                <input type="password" id="password" placeholder="Masukkan Password Anda" required></input>
+                                <input type="password" name="password" id="password" placeholder="Masukkan Password Anda" required value="{{ old('username') }}">
                                 @error('password')
                                 <div class="invalid-feedback">
                                   {{ $message }}

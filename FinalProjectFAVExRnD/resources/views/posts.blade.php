@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/css/home.css">
+    <title>Articles</title>
+    <link rel="stylesheet" href="/css/articles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
 
     <!-- Nicholas - nav bar , udah ada styling juga -->
-    <nav id="Navbar">
+    {{-- <nav id="Navbar">
         <div class="navbar-container">
             <div class="navbar-left">
                 <img class="logo" src="/Assets/images-removebg-preview.png" alt="logo">
@@ -22,7 +22,7 @@
             <div class="navbar-center">
                 <a href="/">HOME</a>
                 <a href="#About">ABOUT</a>
-                <a href="/post">ARTICLES</a>
+                <a href="#Articles">ARTICLES</a>
                 <a href="#ContactUs">CONTACT US</a>
             </div>
             <div class="navbar-right">
@@ -34,7 +34,22 @@
             </div>
         </div>
         <hr>
-    </nav>
+    </nav> --}}
+
+    <main>
+        <div id="content">
+            <h1>Halaman Blog Posts</h1>
+
+            @foreach ($posts as $post)
+            <article>
+                <h2><a href="/post/{{ $post->id }}">{{ $post->tittle }}</a></h2>
+                <p>{{ $post->excerpt }}</p>
+            </article>
+            @endforeach
+        </div>
+
+    </main>
 
 </body>
 </html>
+

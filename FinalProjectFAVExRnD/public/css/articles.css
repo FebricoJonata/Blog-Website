@@ -1,0 +1,110 @@
+:root {
+    --green: #a8dadc;
+    --greenpastel: #f1faee;
+    --bluedark: #1d3557;
+    --black: #121212;
+    --blacklogo: #333333;
+    --white: #f1faee;
+    --blacktrue: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-center a {
+    color: var(--bluedark);
+    font-family: "Merriweather";
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo {
+    width: 85px;
+    height: 60px;
+}
+.search {
+    width: 46px;
+    height: 46px;
+    margin-top: -15px;
+    margin-right: 20px;
+}
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 90px;
+}
+.navbar-left h1 {
+    font-size: 40px;
+    font-family: "Merriwather";
+    color: var(--blacklogo);
+}
+nav {
+    /* background-color: var(--green); */
+    width: 100%;
+    /* padding: 30px 30px; */
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: -30px;
+    position: fixed;
+    background-color: var(--white);
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+.navbar-center {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.navbar-login {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.navbar-login a {
+    color: var(--white);
+    font-family: "Secular One";
+    text-decoration: none;
+    font-size: 27px;
+    border-radius: 25px;
+    margin-top: -20px;
+}
+.navbar-login .login {
+    color: var(--bluedark);
+    background-color: var(--white);
+    width: 144px;
+    height: 54px;
+    padding: 6px 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bluedark);
+    margin-left: -101px;
+}
+.navbar-login .signup {
+    color: var(--white);
+    width: 144px;
+    height: 54px;
+    background-color: var(--bluedark);
+    padding: 6px 23px;
+}
+nav hr {
+    width: 1444px;
+    background-color: var(--green);
+    border-top: none;
+    height: 26px;
+    margin-top: 25px;
+    margin-left: -30px;
+}
+
+#content {
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+}
