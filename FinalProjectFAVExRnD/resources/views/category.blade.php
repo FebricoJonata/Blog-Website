@@ -37,14 +37,20 @@
     </nav> --}}
 
     <main>
-        <h1>
-            {{ $post->tittle }}
-        </h1>
-        <p>Category : {{ $post->category->name }}</p>
-            {!! $post->body !!}
-            <br>
-        <a href="/articles">Back To Articles</a>
+        <div id="content">
+            <h1>Post Category : {{ $category }}/h1>
+
+            @foreach ($posts as $post)
+            <article>
+                <h2><a href="/articles/{{ $post->id }}">{{ $post->tittle }}</a></h2>
+                <p>{{ $post->excerpt }}</p>
+            </article>
+            @endforeach
+            
+        </div>
+
     </main>
 
 </body>
 </html>
+
