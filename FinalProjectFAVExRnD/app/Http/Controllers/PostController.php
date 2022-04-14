@@ -12,7 +12,9 @@ class PostController extends Controller
     public function index(){
         return view('articles', [
             "tittle" => 'articles',
-            "articles" => Post::all()
+            "active" => 'articles',
+            // "articles" => Post::all()
+            "articles" => Post::latest()->paginate(9)
         ]);
 
     }

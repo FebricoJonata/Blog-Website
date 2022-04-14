@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
 
@@ -36,14 +37,20 @@
         <hr>
     </nav> --}}
 
-    <main>
-        <h1>
-            {{ $post->tittle }}
-        </h1>
-        <p>Category : {{ $post->category->name }}</p>
-            {!! $post->body !!}
-            <br>
-        <a href="/articles">Back To Articles</a>
+    <main class="mt-4">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8">
+                    <h1 class="mb-3">{{ $post->tittle }}</h1>
+                    <p>Category : {{ $post->category->name }}</p>
+                    <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" class="img-fluid" alt="photo">
+                        <article class="my-3">
+                            {!! $post->body !!}
+                        </article>
+                    <a href="/articles" class="d-block mt-3">Back To Articles</a>
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>
