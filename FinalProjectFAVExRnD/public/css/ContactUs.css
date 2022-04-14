@@ -1,0 +1,128 @@
+:root {
+    --green: #a8dadc;
+    --greenpastel: #f1faee;
+    --bluedark: #1d3557;
+    --black: #121212;
+    --blacklogo: #333333;
+    --white: #f1faee;
+    --blacktrue: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--green);
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: "Merriweather";
+    text-decoration: none;
+}
+
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-title{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--black);
+    margin-top: 20px;
+}
+
+.header-desc{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--bluedark);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-desc hr{
+    border: none;
+    width:722px;
+    height:1px;
+    background:#000;
+    margin-top: 19px;
+    margin-bottom: 20px;
+}
+
+
+#Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-family: 'Secular One';
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.form-container input{
+    width: 1155px;
+    height: 72px;
+
+    background-color: #fefefe;
+
+    border: 1px #33333380 solid;
+    border-radius: 12px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    margin: 19px;
+}
+
+.email{
+    display: flex;
+    flex-direction: column; 
+    margin: 19px;   
+}
+
+.message{
+    display: flex;
+    flex-direction: column;    
+    margin: 19px;
+}
+
+.message textarea{
+    background-color: #fefefe;
+    border: solid 1px #33333380;
+    border-radius: 12px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 33px;
+}
+
+.button button{
+    width: 199px;
+    height: 75px;
+    background-color: var(--bluedark);
+
+    font-family: 'Merriweather';
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--white);
+
+    border: none;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
