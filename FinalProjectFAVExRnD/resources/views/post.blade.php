@@ -41,8 +41,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-8">
-                    <h1 class="mb-3">{{ $post->tittle }}</h1>
-                    <p>Category : {{ $post->category->name }}</p>
+                    <h1 class="mb-3">{{ $post->tittle }}</h1> 
+                    <p>By {{ $post->user->name }} <br> Category : {{ $post->category->name }}</p>
                     <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" class="img-fluid" alt="photo">
                         <article class="my-3">
                             {!! $post->body !!}

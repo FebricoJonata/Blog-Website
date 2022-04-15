@@ -16,7 +16,7 @@
 <body>
 
     <!-- Nicholas - nav bar , udah ada styling juga -->
-    <nav id="Navbar">
+    {{-- <nav id="Navbar">
         <div class="navbar-container">
             <div class="navbar-left">
                 <img class="logo" src="/Assets/images-removebg-preview copy.png" alt="logo">
@@ -34,6 +34,34 @@
             </div>
         </div>
         <hr>
+    </nav> --}}
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a8dadc">
+      <div class="container-fluid">
+        <img class="logo" src="/Assets/images-removebg-preview copy.png" alt="logo" style="height: 65px">
+        <a class="navbar-brand ms-2" href="/">Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mx-auto my-2 p-2 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item fs-5">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link active" href="/articles">About</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link active" href="/articles">Articles</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </nav>
   
     
@@ -41,9 +69,8 @@
 
     <main>
         <div id="content">
-            <h1>Halaman Blog Articles</h1>
             @if ($articles->count())
-            <div id="carouselExampleCaptions" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
