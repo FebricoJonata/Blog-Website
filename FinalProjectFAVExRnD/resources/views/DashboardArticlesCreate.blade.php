@@ -14,6 +14,9 @@
     
     <!-- Custom styles for this template -->
     <link href="/css/dashboard.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/trix.css">
+    <script type="text/javascript" src="/js/trix.js"></script>
   </head>
   <body>
     
@@ -46,7 +49,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ Request::is('dashboard/posts') ? 'active' : ''}}" href="/dashboard/posts">
+            <a class="nav-link {{ Request::is('dashboard/posts/*') ? 'active' : ''}}" href="/dashboard/posts">
               <span data-feather="file-text"></span>
               My Post
             </a>
@@ -59,48 +62,54 @@
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Halaman Articles</h1>
+        <h1 class="h2">Create Articles</h1>
       </div>
+      <div class="col-lg-8">
+          <form method="POST" action="/dashboard/posts" class="mb-5" enctype="multipart/form-data">
+            @csrf
+            <div class="mb-3">
+              <label for="tittle" class="form-label">Tittle</label>
+              <input type="text" class="form-control @error('tittle') is-invalid @enderror" id="tittle" name="tittle">
+              @error('tittle')
+              <div class="invalid-feedback">
+                  {{ $message }}
+              </div>
+              @enderror
+            </div>
+            <div class="mb-3">
+              <label for="category" class="form-label">Category</label>
+              <select class="form-select @error('category') is-invalid @enderror" name="category_id">
+                  @foreach ($categories as $category)
+                  <option value="{{ $category->id }}">{{ $category->name }}</option>
+                  @endforeach
+              </select>
+              @error('category')
+              <div class="invalid-feedback">
+                  {{ $message }}
+              </div>
+              @enderror
+            </div>
 
-      @if (session()->has('success'))
-      <div class="alert alert-success col-lg-9" role="alert">
-        {{ session('success') }}
-      </div>
-      @endif
+            <div class="mb-3">
+              <label for="image" class="form-label">Post Image</label>
+              <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image">
+              @error('image')
+              <div class="invalid-feedback">
+                  {{ $message }}
+              </div>
+              @enderror
+            </div>
+
+            <div class="mb-3">
+              <label for="body" class="form-label">Body</label>
+              <input id="body" type="hidden" name="body">
+              <trix-editor input="body"></trix-editor>
+            </div>
 
 
-      <div class="table-responsive col-lg-9">
-        <a href="/dashboard/posts/create" class="btn btn-primary mb-3">Create New Post</a>
-        <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Title</th>
-              <th scope="col">Category</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            @foreach ($articles as $post)
-            <tr>
-              <td>{{ $loop->iteration }}</td>
-              <td>{{ $post->tittle }}</td>
-              <td>{{ $post->category->name }}</td>
-              <td>
-                <a href="/dashboard/posts/{{ $post->id }}" class="badge bg-info"><span data-feather="eye"></span></a>
-                <a href="/dashboard/posts/{{ $post->id }}/edit" class="badge bg-warning"><span data-feather="edit"></span></a>
-                <form action="/dashboard/posts/{{ $post->id }}" method="POST" class="d-inline">
-                  @method('delete')
-                  @csrf
-                  <button class="badge bg-danger border-0" onclick="return confirm('Are you sure to delete?')"><span data-feather="x-circle"></span></button>
-                </form>
-                {{-- <a href="" class="badge bg-danger"><span data-feather="x-circle"></span></a> --}}
-              </td>
-            </tr>
-                
-            @endforeach
-          </tbody>
-        </table>
+            <button type="submit" class="btn btn-primary">Create Posts</button>
+          </form>
+
       </div>
     </main>
   </div>

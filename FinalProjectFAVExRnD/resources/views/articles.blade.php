@@ -78,21 +78,37 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" class="d-block w-100" alt="Image 1">
+                    @if ($articles[0]->image)
+                    <div style="max-height: 600px; max-width: 1600px; overflow: hidden">
+                      <img src="{{ asset('storage/' . $articles[0]->image) }}" class="img-fluid" alt="photo">
+                    </div>
+                    @else
+                    <img src="https://source.unsplash.com/1600x600?{{ $articles[0]->category->name }}" class="img-fluid" alt="photo">
+                    @endif
                     <div class="carousel-caption d-none d-md-block">
                       <h3><a href="/articles/{{ $articles[0]->id }}" class="text-decoration-none">{{ $articles[0] ->tittle }}</a></h3>
                       <p>{{ $articles[0] ->excerpt }}</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" class="d-block w-100" alt="Image 2">
+                    @if ($articles[1]->image)
+                    <img src="{{ asset('storage/' . $articles[1]->image) }}" class="img-fluid" alt="photo">
+                    @else
+                    <img src="https://source.unsplash.com/1600x600?{{ $articles[1]->category->name }}" class="img-fluid" alt="photo">
+                    @endif
+                    
                     <div class="carousel-caption d-none d-md-block">
                       <h3><a href="/articles/{{ $articles[1]->id }}" class="text-decoration-none">{{ $articles[1] ->tittle }}</a></h3>
                       <p>{{ $articles[1] ->excerpt }}</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" class="d-block w-100" alt="Image 3">
+                    @if ($articles[2]->image)
+                    <img src="{{ asset('storage/' . $articles[2]->image) }}" class="img-fluid" alt="photo">
+                    @else
+                    <img src="https://source.unsplash.com/1600x600?{{ $articles[2]->category->name }}" class="img-fluid" alt="photo">
+                    @endif
+                    
                     <div class="carousel-caption d-none d-md-block">
                       <h3><a href="/articles/{{ $articles[2]->id }}" class="text-decoration-none">{{ $articles[2] ->tittle }}</a></h3>
                       <p>{{ $articles[2] ->excerpt }}</p>
@@ -118,7 +134,12 @@
                 <div class="col-md-4 mb-3">
                   <div class="card">
                     <div class="position-absolute bg-dark px-3 py-2 text-white">{{ $post->category->name }}</div>
-                    <img src="https://source.unsplash.com/600x400?{{ $post->category->name }}" class="card-img-top" alt="...">
+                    @if ($post->image)
+                    <img src="{{ asset('storage/' . $post->image) }}" class="img-fluid" alt="photo">
+                    @else
+                    <img src="https://source.unsplash.com/600x400?{{ $post->category->name }}" class="img-fluid" alt="photo">
+                    @endif
+                    {{-- <img src="https://source.unsplash.com/600x400?{{ $post->category->name }}" class="card-img-top" alt="..."> --}}
                     <div class="card-body">
                       <h5 class="card-title">{{ $post->tittle }}</h5>
                       <p class="card-text">{{ $post->excerpt }}</p>

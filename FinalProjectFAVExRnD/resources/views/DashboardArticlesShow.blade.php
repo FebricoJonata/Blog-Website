@@ -42,10 +42,20 @@
             <div class="row justify-content-center mb-5">
                 <div class="col-md-8">
                     <h1 class="mb-3">{{ $post->tittle }}</h1> 
-                    <a href="" class="btn btn-warning">Edit</a>
-                    <a href="" class="btn btn-danger">Delete</a>
+                    <a href="/dashboard/posts/{{ $post->id }}/edit" class="btn btn-warning">Edit</a>
+                    <form action="/dashboard/posts/{{ $post->id }}" method="POST" class="d-inline">
+                        @method('delete')
+                        @csrf
+                        <button class="btn btn-danger border-0" onclick="return confirm('Are you sure to delete?')">Delete</button>
+                      </form>
                     <p>By {{ $post->user->name }} <br> Category : {{ $post->category->name }}</p>
+
+                    @if ($post->image)
+                    <img src="{{ asset('storage/' . $post->image) }}" class="img-fluid" alt="photo">
+                    @else
                     <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" class="img-fluid" alt="photo">
+                    @endif
+
                         <article class="my-3">
                             {!! $post->body !!}
                         </article>
