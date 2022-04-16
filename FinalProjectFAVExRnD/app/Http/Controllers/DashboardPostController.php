@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class DashboardPostController extends Controller
 {
@@ -26,7 +28,9 @@ class DashboardPostController extends Controller
      */
     public function create()
     {
-        //
+        return view('DashboardArticlesCreate', [
+            'categories' => Category::all()
+        ]);
     }
 
     /**
@@ -37,7 +41,27 @@ class DashboardPostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // return $request ->file('image')->store('post-image');
+
+
+        $validateData = $request->validate([
+            'tittle' => 'required|max:255',
+            'category_id' => 'required',
+            'image' => 'image|file|min:1024',
+            'body' => 'required'
+
+        ]);
+
+        if($request->file('image')){
+            $validateData['image'] = $request -> file('image')->store('post-images');
+        }
+
+        $validateData['user_id'] = auth()->user()->id;
+        $validateData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+
+        Post::create($validateData);
+
+        return redirect('/dashboard/posts')->with('success', 'New Post has been added');
     }
 
     /**
@@ -61,7 +85,10 @@ class DashboardPostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        return view('DashboardArticlesEdit', [
+            'post' => $post,
+            'categories' => Category::all()
+        ]);
     }
 
     /**
@@ -73,7 +100,22 @@ class DashboardPostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $rules = [
+            'tittle' => 'required|max:255',
+            'category_id' => 'required',
+            'body' => 'required'
+
+        ];
+
+        $validateData = $request -> validate($rules);
+
+        $validateData['user_id'] = auth()->user()->id;
+        $validateData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+
+        Post::where('id', $post->id)->update($validateData);
+
+        return redirect('/dashboard/posts')->with('success', 'Post has been updated');
+
     }
 
     /**
@@ -84,6 +126,8 @@ class DashboardPostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        Post::destroy($post->id);
+
+        return redirect('/dashboard/posts')->with('success', 'Post has been Deleted');
     }
 }
