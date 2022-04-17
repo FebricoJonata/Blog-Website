@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard General</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="/css/dashboardgeneralstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +18,12 @@
                 <h1>LOGO</h1>
             </div>
             <div class="navbar-center">
-                <a href="#Home">HOME</a>
-                <a href="#About">ABOUT</a>
-                <a href="#Articles">ARTICLES</a>
-                <a href="#ContactUs">CONTACT US</a>
+                <a href="/">HOME</a>
+                <a href="/articles">ARTICLES</a>
             </div>
             <div class="navbar-login">
-                <a class="login" href="">Log In</a>
-                <a class="signup" href="">Sign Up</a>
+                <a class="login" href="/login">Log In</a>
+                <a class="signup" href="/register">Sign Up</a>
             </div>
         </div>
         <hr>

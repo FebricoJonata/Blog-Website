@@ -143,14 +143,12 @@
     <nav id="Navbar">
         <div class="navbar-container">
             <div class="navbar-left">
-                <img class="logo" src="/Assets/images-removebg-preview copy.png" alt="logo">
+                <img class="logo" src="/Assets/images-removebg-preview.png" alt="logo">
                 <h1>LOGO</h1>
             </div>
             <div class="navbar-center">
                 <a href="/">HOME</a>
-                <a href="#About">ABOUT</a>
-                <a href="#Articles">ARTICLES</a>
-                <a href="#ContactUs">CONTACT US</a>
+                <a href="/articles">ARTICLES</a>
             </div>
             {{-- <div class="navbar-right">
                 <img class="search" src="/Assets/magnifying-glass.png" alt="seacrh">
@@ -166,7 +164,7 @@
     <section id="Register">
         <div class="register-container">
             <div class="register-left">
-                <img src="/Assets/ae5ae16a1f8bdad663c96a699d91e646-removebg-preview copy.png" alt="gambar-utama">
+                <img src="/Assets/ae5ae16a1f8bdad663c96a699d91e646-removebg-preview.png" alt="gambar-utama">
                 <p class="p2">Together we study</p>
                 <p>Together we build the better world</p>
             </div>

@@ -65,7 +65,7 @@
         <h1 class="h2">Edit Articles</h1>
       </div>
       <div class="col-lg-8">
-          <form method="POST" action="/dashboard/posts/{{ $post->id }}" class="mb-5">
+          <form method="POST" action="/dashboard/posts/{{ $post->id }}" class="mb-5" enctype="multipart/form-data">
             @method('put')
             @csrf
             <div class="mb-3">
@@ -89,6 +89,16 @@
                   @endforeach
               </select>
               @error('category')
+              <div class="invalid-feedback">
+                  {{ $message }}
+              </div>
+              @enderror
+            </div>
+
+            <div class="mb-3">
+              <label for="image" class="form-label">Post Image</label>
+              <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image">
+              @error('image')
               <div class="invalid-feedback">
                   {{ $message }}
               </div>

@@ -1,209 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="/css/dashboardallstyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav id="Navbar">
-        <div class="navbar-container">
-            <div class="navbar-left">
-                <img class="logo" src="/Assets/images-removebg-preview.png" alt="logo">
-                <h1>LOGO</h1>
-            </div>
-            <div class="navbar-center">
-                <a href="#Home">HOME</a>
-                <a href="#AboutUs">ABOUT</a>
-                <a href="#Articles">ARTICLES</a>
-                <a href="#ContactUs">CONTACT US</a>
-            </div>
-            <div class="navbar-profile">
-                <p class="welcome">WELCOME!</p>
-                <p class="name">Name</p>
-            </div>
-            <div class="navbar-right">
-                <img class="halo" src="/Assets/man-waving-arm.png" alt="gambarhalo">
-            </div>
-        </div>
-        <hr>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Dashboard</title>   
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Blog</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <form action="/logout" method="post">
+        @csrf
+        <button type="submit" class="nav-link px-3 bg-dark border-0"><span data-feather="log-out"></span>Log Out</button>
+      </form>
+    </form>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link {{ Request::is('dashboard') ? 'active' : ''}}" aria-current="page" href="/dashboard">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{ Request::is('dashboard/posts') ? 'active' : ''}}" href="/dashboard/posts">
+              <span data-feather="file-text"></span>
+              My Post
+            </a>
+          </li>
+        </ul>
+
+        
+      </div>
     </nav>
 
-    <!-- bagian dashboard -->
-    <section id="Dashboard">
-        <div class="register-container">
-            <div class="register-left">
-                <img src="./Assets/ae5ae16a1f8bdad663c96a699d91e646-removebg-preview.png" alt="gambar-utama">
-                <p class="p2">Together we study</p>
-                <p>Together we build the better world</p>
-            </div>
-            <div class="register-right">
-                <div class="register-heading">
-                    <img class="bg" src="./Assets/Vector.png" alt="gambar-utama">
-                    <h1>StudBlog</h1>
-                    <p class="p1">Studly is a website that provide online learning. Now, Studly announce their new product StudBlog</p>
-                    <p class="p2">Let’s try it!</p>
-                </div>
-            </div>
-    </section>
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Welcome Back, {{ auth()->user()->name }}</h1>
+      </div>
+    </main>
+  </div>
+</div>
 
-    <!-- about us -->
-    <section id="AboutUs">
-        <div class="about-contanier">
-            <div class="about-top">
-                <p class="judul">ABOUT US</p>
-                <p class="letsknow">Let's Know Us More!</p>
-                <hr>
-            </div>
-            <div class="about-bottom">
-                <div class="about-left">
-                    <img src="/Assets/sticky-note.png" alt="">
-                    <p class="judul">Studly</p>
-                    <p class="ket">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum odio et auctor in augue at eu a volutpat. Purus ultrices risus sagittis lectus leo, mauris. Metus nisl gravida nisl ut. Ultrices faucibus lectus lectus auctor et. Ac purus vehicula scelerisque turpis dolor. In ac libero dignissim faucibus purus eleifend id</p>
-                </div>
-                <div class="about-right">
-                    <img src="/Assets/Online education text with dog attending online class.png" alt="gambaranimasi">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="Articles">
-        <div class="article-container">
-            <div class="articles-top">
-                <p>ARTICLES</p>
-                <img src="/Assets/Vector (1).png" alt="">
-            </div>
-            <div class="articles-bottom">
-                <div class="box">
-                    <img src="/Assets/Rectangle 19.png" alt="">
-                    <p class="judul">Tips For Better Study</p>
-                    <p class="ket">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem non tellus...</p>
-                    <div class="articles-read">
-                        <a class="read" href="">Read Article</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/Assets/Rectangle 19.png" alt="">
-                    <p class="judul">Tips For Better Study</p>
-                    <p class="ket">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem non tellus...</p>
-                    <div class="articles-read">
-                        <a class="read" href="">Read Article</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/Assets/Rectangle 19.png" alt="">
-                    <p class="judul">Tips For Better Study</p>
-                    <p class="ket">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem non tellus...</p>
-                    <div class="articles-read">
-                        <a class="read" href="">Read Article</a>
-                    </div>
-                </div>
-            </div>
-            <div class="articles-nav">
-                <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">&raquo;</a>
-                </div>
-                <a href="">Show All</a>
-            </div>
-        </div>
-    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <section id="ContactUs">
-        <div class="contact-container">
-            <div class="contact-top">
-                <p class="judul">CONTACT US</p>
-                <p class="ket">Leave Your Message Here!</p>
-                <hr>
-            </div>
-            <div class="contact-content">
-                <div class="register-form">
-                    <form id="form" onsubmit="validate()">
-                        <div class="form-bg">
-                            <div class="contact-input">
-                                <label for="fullname">Fullname</label>
-                                <input type="text" id="username" name="username" placeholder="Masukkan Nama Anda" required>
-                            </div>
-                            <div class="contact-input">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required>
-                            </div>
-                            <div class="contact-input">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message here" required></textarea>
-                            </div>
-                            <div>
-                            <div class="contact-send">
-                                <a class="send" href="">SEND</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="Footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <p class="title">Studly</p>
-                <div class="location">
-                    <img src="/Assets/image 17.png" alt="lokasi">
-                    <p>Flying Chicken Road 12A, Bogor, Indonesia, 10859</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-left">
-                    <div class="content">
-                        <div class="content-top">
-                            <p class="findUs">FIND US AT</p>
-                        </div>
-                        <div class="content-bottom">
-                            <div class="content-left">
-                                <div class="place">
-                                    <img src="/Assets/image 22.png" alt="">
-                                    <p class="usern">@Studly_ID</p>
-                                </div>
-                                <div class="place">
-                                    <img src="/Assets/image 21.png" alt="">
-                                    <p class="usern">Studly Indonesia</p>
-                                </div>
-                            </div>
-                            <div class="content-right">
-                                <div class="place">
-                                    <img src="/Assets/image 20.png" alt="">
-                                    <p class="usern">Studly Indonesia</p>
-                                </div>
-                                <div class="place">
-                                    <img src="/Assets/image 19.png" alt="">
-                                    <p class="usern">@studly_id</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <img src="/Assets/Online course lettering.png" alt="">
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
-    "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-    <script src="script.js"></script>
-</body>
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+      <script src="/js/dashboard.js"></script>
+  </body>
 </html>

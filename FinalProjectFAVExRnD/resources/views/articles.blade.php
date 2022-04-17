@@ -39,7 +39,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a8dadc">
       <div class="container-fluid">
-        <img class="logo" src="/Assets/images-removebg-preview copy.png" alt="logo" style="height: 65px">
+        <img class="logo" src="/Assets/images-removebg-preview.png" alt="logo" style="height: 65px">
         <a class="navbar-brand ms-2" href="/">Blog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,9 +48,6 @@
           <ul class="navbar-nav mx-auto my-2 p-2 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item fs-5">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item fs-5">
-              <a class="nav-link active" href="/articles">About</a>
             </li>
             <li class="nav-item fs-5">
               <a class="nav-link active" href="/articles">Articles</a>

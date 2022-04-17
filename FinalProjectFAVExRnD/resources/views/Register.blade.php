@@ -20,9 +20,7 @@
             </div>
             <div class="navbar-center">
                 <a href="/">HOME</a>
-                <a href="#About">ABOUT</a>
-                <a href="/post">ARTICLES</a>
-                <a href="#ContactUs">CONTACT US</a>
+                <a href="/articles">ARTICLES</a>
             </div>
             <div class="navbar-right">
                 <img class="search" src="/Assets/magnifying-glass.png" alt="seacrh">
